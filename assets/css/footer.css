@@ -1,0 +1,27 @@
+footer{
+    background-color: #29345C;
+    width: 100%;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-conteiner{
+    padding: 17px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+
+.social-container{
+    height: 30px;
+}
+
+footer img{
+    cursor: pointer;
+}
+
+footer img:hover{
+    filter: brightness(1.5);
+}
