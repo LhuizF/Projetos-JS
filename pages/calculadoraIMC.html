@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/mainStyle.css">
+    <link rel="stylesheet" href="../assets/css/nav.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+
+    <link rel="stylesheet" href="../assets/css/calculadoraIMG.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+
+    <nav></nav>
+
+    <main>
+        <header></header>
+
+        <div class="main-container">
+
+            <div class="main-calculator">
+                <h1>Tabela IMC</h1>
+                <div class="table">
+                    <ul>
+                        <li><h2>IMG</h2></li>
+                        <li>Menos do que 18,5</li>
+                        <li>Entre 18,5 a 24,9</li>
+                        <li>Entre 25 a 29,9</li>
+                        <li>Entre 30 a 34,9</li>
+                        <li>Entre 35 a 39,9</li>
+                        <li>Mais do que 40</li>
+                    </ul>
+                    
+                    <ul>
+                        <li><h2>Resultado</h2></li>
+                        <li>Abaixo do peso</li>
+                        <li>Peso normal</li>
+                        <li>Sobrepeso</li>
+                        <li>Obesidaded grau 1</li>
+                        <li>Obesidaded grau 4</li>
+                        <li>Obesidaded grau 3</li>
+                    </ul>
+                </div>
+                <h2>Calcule seu IMC</h2>
+                <div class="input-container">
+                    <label for="input-1">Peso</label>
+                    <input type="text" id="input-1">
+                    <label for="input-2">Altura</label>
+                    <input type="text" id="input-2">
+    
+                    <div class="btn-container">
+                        <button class="main-btn">Calcular</button>
+                    </div>
+                    
+                </div>
+                <p class="resultado"></p>
+            </div>
+            
+        </div>
+        
+        <footer></footer>
+    </main>
+    
+    <script type="module" src="../assets/js/main.js"></script>
+    <script type="module" src="../assets/js/calculadoraIMG.js"></script>
+
+</body>
+</html>

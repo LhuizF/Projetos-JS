@@ -1,50 +1,55 @@
 function btnNav() {
-    const btnMenu = document.getElementById("menu-btn")
+    const btnMenu = document.getElementById("menu-btn");
     btnMenu.addEventListener('click', () => {
-        const menu = document.querySelector('.menu-container')
-        const mainDiv = document.querySelector('main')
+        const menu = document.querySelector('.menu-container');
+        const mainDiv = document.querySelector('main');
+        const footerDiv = document.querySelector('footer');
+        
         if (menu.classList.contains('closed-menu')) {
-            menu.classList.remove('closed-menu')
-            btnMenu.innerHTML = 'close'
-            mainDiv.style.marginLeft = '424px'
+            menu.classList.remove('closed-menu');
+            btnMenu.innerHTML = 'close';
+            mainDiv.style.marginLeft = '424px';
+            
         } else {
-            menu.classList.add('closed-menu')
-            btnMenu.innerHTML = 'menu'
-            mainDiv.style.marginLeft = '74px'
-        }
-    })
-}
+            menu.classList.add('closed-menu');
+            btnMenu.innerHTML = 'menu';
+            mainDiv.style.marginLeft = '74px';
+            
+        };
+    });
+};
 
 async function navMenu() {
-    const nav = document.querySelector('nav')
-    const response = await fetch("../pages/includes/nav.html")
-    const responseText = await response.text()
+    const nav = document.querySelector('nav');
+    const response = await fetch("../pages/includes/nav.html");
+    const responseText = await response.text();
 
-    nav.innerHTML += responseText
+    nav.innerHTML += responseText;
 
-    btnNav()
-}
+    btnNav();
+};
 
 async function footer(){
-    const footer = document.querySelector('footer')
-    const response = await fetch("../pages/includes/footer.html")
-    const responseText = await response.text()
+    const footer = document.querySelector('footer');
+    const response = await fetch("../pages/includes/footer.html");
+    const responseText = await response.text();
 
-    footer.innerHTML += responseText
-}
+    footer.innerHTML += responseText;
+};
 
 async function header(){
-    const header = document.querySelector('header')
-    const response = await fetch("../pages/includes/header.html")
-    const responseText = await response.text()
+    const header = document.querySelector('header');
+    const response = await fetch("../pages/includes/header.html");
+    const responseText = await response.text();
 
-    header.innerHTML += responseText
-}
+    header.innerHTML += responseText;
+};
 
 function start(){
-    header()
-    navMenu()
-    footer()
-}
+    header();
+    navMenu();
+    footer();
+};
 
-export default start
+export default start;
+

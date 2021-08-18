@@ -20,19 +20,26 @@ main{
 header{
     background-color: #29345C;
     width: 100%;
-    height:fit-content;
+    display: flex;
+    justify-content: center;
 }
 
-.logo{
-    margin: 22px 50px;
+.header-container{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    width: 95%;
 }
 
 section{
     margin-top: 40px;
     width: 70%;
 }
-
-h1{
+.header-container a{
+    font-size: 30px;
+    margin-right: 50px;
+}
+.header-container h1{
     margin: 40px 0;
 }
 
@@ -47,4 +54,27 @@ h1{
 a{
     text-decoration: none;
     color: #fff;
+}
+
+li{
+    list-style: none;
+}
+
+.main-btn{
+    color: #E5E6EB;
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid #E5E6EB;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 240px;
+    background-color: transparent;
+    font-family: inherit;
+    margin-top: 40px;
+}
+
+.main-btn:hover{
+    background-color: #E5E6EB;
+    color: #292929;
 }
