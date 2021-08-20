@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../assets/css/mainStyle.css">
     <link rel="stylesheet" href="../assets/css/nav.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
+
+    <link rel="stylesheet" href="../assets/css/geradorSenha.css">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Calculadora de IMC</title>
 </head>
@@ -18,11 +21,53 @@
     <main>
         <header></header>
 
+        <dic class="main-container">
+            <h1>Gerador de Senha</h1>
+            <p>Selecione as opções abaixo</p>
+            
+            <div class="input-container">
+                <div class="text-input-container">
+                    <p>Quantidade de caracteres</p> 
+                    <input type="number" id="NumCharacter" value="10">
+                </div>
+
+                <div class="text-input-container">
+                    <p>Adicionar Números</p>
+                    <input type="checkbox" id="chk-num" checked>
+                </div>
+
+                <div class="text-input-container">
+                    <p>Adicionar Letras Minúsculas</p>
+                    <input type="checkbox" id="chk-min" checked>
+                </div>
+
+                <div class="text-input-container">
+                    <p>Adicionar Letras Maiúsculass</p>
+                    <input type="checkbox" id="chk-mai">
+                </div>
+
+                <div class="text-input-container">
+                    <p>Adicionar Símbolos</p>
+                    <input type="checkbox" id="chk-sym">
+                </div>
+
+                <div class="password-container">
+                    <input class="password" readonly="true">
+                    <i class="material-icons btn-copy" onclick="btnCopy()">content_copy</i>
+                </div>
+
+                <div class="btn-container">
+                    <button class="main-btn" id="new-password" >Gerar Senha</button>
+                </div>
+
+            </div>
+        </dic>
 
         <footer></footer>
     </main>
     
     <script type="module" src="../assets/js/main.js"></script>
+    <script src="../assets/js/geradorSenha.js"></script>
 
 </body>
 </html>

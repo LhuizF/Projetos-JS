@@ -35,10 +35,12 @@ section{
     margin-top: 40px;
     width: 70%;
 }
+
 .header-container a{
     font-size: 30px;
     margin-right: 50px;
 }
+
 .header-container h1{
     margin: 40px 0;
 }
@@ -77,4 +79,15 @@ li{
 .main-btn:hover{
     background-color: #E5E6EB;
     color: #292929;
+}
+
+.main-container{
+    background-color: #252D4B;
+    padding: 40px;
+    margin-top: 120px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
 }

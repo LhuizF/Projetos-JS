@@ -1,0 +1,23 @@
+.main-container input{
+    width: 100%;
+    border: none;
+    height: 44px;
+    min-width: 500px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    outline: none;
+    text-align: right;
+}
+
+.btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-container button{
+    margin: 5px 0px;
+    width: 120px;
+    font-size: 24px;
+    padding: 5px;
+}

@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../assets/css/mainStyle.css">
     <link rel="stylesheet" href="../assets/css/nav.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
+
+    <link rel="stylesheet" href="../assets/css/cronometro.css">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Calculadora de IMC</title>
 </head>
@@ -18,11 +21,24 @@
     <main>
         <header></header>
 
+        <div class="main-container">
+
+            <div class="timer"> 
+                <p>00:00:00</p>
+            </div>
+
+            <div class="btn-container">
+                <button class="main-btn" >Iniciar</button>
+                <button class="main-btn" >Pausar</button>
+                <button class="main-btn" >Zerar</button>
+            </div>
+        </div>
 
         <footer></footer>
     </main>
     
     <script type="module" src="../assets/js/main.js"></script>
+    <script src="../assets/js/cronometro.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,64 @@
+.main-container h1{
+    font-size: 60px;
+}
+
+.main-container p{
+    font-size: 30px;
+}
+
+.password-container{
+    margin-top: 15px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password-container input{
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    outline: none;
+}
+
+.password-container i{
+    cursor: pointer;
+    padding: 2px;
+}
+
+.password-container i:hover{
+    background-color: #eaeaea;
+    border-radius: 6px;
+    color: #252D4B;
+}
+
+.password{
+    font-size: 30px;
+}
+
+.input-container{
+    padding: 10px 0;
+}
+
+.text-input-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 0;
+}
+
+.text-input-container p{
+    font-size: 18px;
+}
+
+.text-input-container input{
+    width: 18px;
+    height: 18px;
+}
+
+.btn-container button{
+    font-size: 20px;
+}
+
+#NumCharacter{
+    width: 40px;
+}
