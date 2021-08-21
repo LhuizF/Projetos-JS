@@ -3,16 +3,21 @@ footer{
     width: 100%;
     text-align: justify;
     display: flex;
-    justify-content: center;
-    margin-top: 100px;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: 10px;
 }
 
 .footer-conteiner{
+    margin-right: 4vw;
     padding: 17px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 85%;
+    transition: 0.4s margin-left linear;
 }
 
 .social-container{

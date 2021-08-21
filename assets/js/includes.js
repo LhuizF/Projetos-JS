@@ -3,18 +3,19 @@ function btnNav() {
     btnMenu.addEventListener('click', () => {
         const menu = document.querySelector('.menu-container');
         const mainDiv = document.querySelector('main');
-        const footerDiv = document.querySelector('footer');
+        const footerDiv = document.querySelector('.footer-conteiner');
         
         if (menu.classList.contains('closed-menu')) {
             menu.classList.remove('closed-menu');
+            footerDiv.style.marginLeft =" 456px";
             btnMenu.innerHTML = 'close';
             mainDiv.style.marginLeft = '424px';
-            
+
         } else {
             menu.classList.add('closed-menu');
+            footerDiv.style.marginLeft ="0px";
             btnMenu.innerHTML = 'menu';
             mainDiv.style.marginLeft = '74px';
-            
         };
     });
 };

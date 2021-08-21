@@ -1,0 +1,37 @@
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 30vw;
+    min-width: 400px;
+    margin-top: 16px;
+}
+
+.input-container button{
+    width: auto;
+    margin: 0;
+    font-size: 16px;
+}
+
+.input-container input{
+    height: 25px;
+    width: 60%;
+}
+
+.input-container i{
+    margin-right: 6px;
+}
+
+.list-item{
+    display: none;
+    padding: 6px 40px;
+    margin-top: 20px;
+    width: 30vw;
+    min-width: 400px;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}

@@ -1,0 +1,22 @@
+.main-container ul {
+    margin-left: 20px;
+}
+
+.main-container ul li{
+    margin: 10px 0;
+    list-style-type: disc;
+}
+
+.main-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    height: 25px;
+    font-size: 100%;
+}
+
+form p{
+    color: #D7102E;
+}

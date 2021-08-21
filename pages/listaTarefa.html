@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="../assets/css/mainStyle.css">
     <link rel="stylesheet" href="../assets/css/nav.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
+
+    <link rel="stylesheet" href="../assets/css/listaTarefa.css">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Calculadora de IMC</title>
+    <title>Lista de Tarefas</title>
 </head>
 <body>
 
@@ -18,11 +21,27 @@
     <main>
         <header></header>
 
+        <div class="main-container">
+            <h1>lista de tarefas</h1>
+
+            <div class="input-container">
+                <input type="text"  placeholder="Nome do item" autofocus>
+                <button class="main-btn" id="btn-add"><i class="material-icons">add_circle_outline</i>Adicionar</button>
+            </div>
+
+        </div>
+
+        <div class="list-item main-container">
+
+        </div>
+        
+        
 
         <footer></footer>
     </main>
     
     <script type="module" src="../assets/js/main.js"></script>
+    <script src="../assets/js/listaTarefa.js"></script>
 
 </body>
 </html>

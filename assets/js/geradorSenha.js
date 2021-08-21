@@ -61,5 +61,5 @@ function btnCopy(){
     console.log(text[0].value)
     text[0].select();
     document.execCommand("Copy");
-    alert("Texto Copiado: " + text[0].value);
+    alert("Senha copiada: " + text[0].value);
 };

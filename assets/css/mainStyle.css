@@ -27,7 +27,7 @@ header{
 .header-container{
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 16px;
     width: 95%;
 }
 
@@ -90,4 +90,15 @@ li{
 .btn-container{
     display: flex;
     justify-content: center;
+}
+
+.btn-icon{
+    cursor: pointer;
+    padding: 2px;
+}
+
+.btn-icon:hover{
+    background-color: #eaeaea;
+    border-radius: 6px;
+    color: #252D4B;
 }

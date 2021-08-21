@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="../assets/css/mainStyle.css">
     <link rel="stylesheet" href="../assets/css/nav.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
+
+    <link rel="stylesheet" href="../assets/css/validandoFormulario.css">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Calculadora de IMC</title>
+    <title>Formulario</title>
 </head>
 <body>
 
@@ -18,11 +21,42 @@
     <main>
         <header></header>
 
+        <div class="main-container">
+            <h1>Formulário de Cadastro</h1>
+
+            <ul>
+                <li>Nenhum campo pode estar vazio.</li>
+                <li>Usuário só poderá conter letras e/ou números.</li>
+                <li>Usuário deverá ter entre 4 e 12 caracteres.</li>
+                <li>Senha precisa ter entre 6 e 12 caracteres.</li>
+            </ul>
+
+            <form action="/" method="POST" class='form' autocomplete="off">
+                <label>Nome</label>
+                <input type="text" class="nome">
+                <label>Sobrenome</label>
+                <input type="text" class="sobrenome">
+                <label>CPF</label>
+                <input type="text" class="cpf">
+                <label>Usuário</label>
+                <input type="text" class="user">
+                <label>Senha</label>
+                <input type="password" class="password">
+                <label>Repetir Senha</label>
+                <input type="password" class="confirm-password">
+
+                <div class="btn-container">
+                    <button type="submit" class="main-btn">Enviar</button>
+                </div>
+            </form>
+
+        </div>
 
         <footer></footer>
     </main>
     
     <script type="module" src="../assets/js/main.js"></script>
+    <script type='module' src="../assets/js/validandoFormulario.js"></script>
 
 </body>
 </html>

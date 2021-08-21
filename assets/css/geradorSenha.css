@@ -20,17 +20,6 @@
     outline: none;
 }
 
-.password-container i{
-    cursor: pointer;
-    padding: 2px;
-}
-
-.password-container i:hover{
-    background-color: #eaeaea;
-    border-radius: 6px;
-    color: #252D4B;
-}
-
 .password{
     font-size: 30px;
 }
