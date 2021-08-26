@@ -1,19 +1,19 @@
-import validateCPF from './validadorCPF.js'
+import validateCPF from './validadorCPF.js';
 
 class Validar{
     constructor(){
         this.form = document.querySelector('.form');
         this.event();
-    }
+    };
 
     event(){
         this.form.addEventListener('submit', (e)=>{
-            this.handleSubmmit(e)
-        })
-    }
+            this.handleSubmmit(e);
+        });
+    };
 
     handleSubmmit(e){
-        e.preventDefault()
+        e.preventDefault();
 
         const checkInput = this.checkInput();
         const checkPassword = this.checkPassword();
@@ -21,16 +21,15 @@ class Validar{
 
         console.log(checkInput, checkPassword, checkCPF)
 
-        if(!checkCPF) return this.alertErr(this.form.querySelector('.cpf'), 'CPF inválido')
-        if(checkInput && checkPassword && checkCPF) alert('Formulário Enviado :D')
-
-    }
+        if(!checkCPF) return this.alertErr(this.form.querySelector('.cpf'), 'CPF inválido');
+        if(checkInput && checkPassword && checkCPF) alert('Formulário Enviado :D');
+    };
 
     checkInput(){
         let status = true;
 
         for(let errorText of this.form.querySelectorAll(".form p")){
-            errorText.remove()
+            errorText.remove();
         };
 
         for(let input of this.form.querySelectorAll('input')){
@@ -43,7 +42,6 @@ class Validar{
                 //se não retornar true status vai ser false
                 if(!this.validaUser(input)) status = false;
             };
-
         };
 
         return status;
@@ -62,7 +60,7 @@ class Validar{
         if(!user.match(/[a-zA-Z0-9]+/g)){
             this.alertErr(input, 'Nome de usuário só pode conter letras e/ou números');
             status = false;
-        }
+        };
 
         return status;
     };
@@ -81,7 +79,7 @@ class Validar{
             this.alertErr(password, "As senhas precisam ser iguais");
             this.alertErr(confPassword, "As senhas precisam ser iguais");
             status = false;
-        }
+        };
 
         return status;
     };
@@ -90,7 +88,7 @@ class Validar{
         const p = document.createElement("p");
         p.innerHTML = msg;
         input.insertAdjacentElement("afterend", p);
-    }
-}
+    };
+};
 
 const validar = new Validar();

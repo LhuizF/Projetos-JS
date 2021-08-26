@@ -10,7 +10,7 @@ export default (cpf) =>{
     const cpfTrue = nineDigitCPF + digito1 + digito2;
 
     return cpfTrue === cpfFormatado;
-}
+};
 
 function setDigit(cpf){
     const cpfArr = Array.from(cpf);

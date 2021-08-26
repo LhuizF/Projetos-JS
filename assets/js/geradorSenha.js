@@ -28,38 +28,51 @@ function mixCharacters(password){
         password[m] = password[i];
         password[i] = t;
     };
-
     return password;
 };
 
 document.getElementById('new-password').addEventListener('click', () => {
-    const pwContainer = document.querySelector('.password-container');
-    const pwDisplay = document.querySelector('.password');
-    const pwStatus = document.querySelector('.main-container p')
-
-    const password = createPassword(
-        document.getElementById('NumCharacter').value,
+    const qtd =  document.getElementById('NumCharacter').value
+    const password = createPassword( qtd,
         document.getElementById('chk-num').checked,
         document.getElementById('chk-min').checked,
         document.getElementById('chk-mai').checked,
         document.getElementById('chk-sym').checked
     );
 
-    if(!password){
-        pwContainer.style.display = 'none'
-        pwStatus.innerHTML = 'Nenhum caractere selecionado'
-        pwDisplay.value = ''
+    if(qtd < 4 || qtd > 30){
+        displayMsg('Quantidade invalida');
+
     }else{
-        pwContainer.style.display = 'flex'
-        pwStatus.innerHTML = 'Selecione as opções abaixo'
-        pwDisplay.value = password;
+        if(!password){
+            displayMsg('Nenhum caractere selecionado');
+
+        }else{
+            displayMsg('Selecione as opções abaixo', password);
+        }
     }
 });
 
 function btnCopy(){
-    const text = document.getElementsByClassName("password");
-    console.log(text[0].value)
-    text[0].select();
+    const text = document.querySelector(".password");
+    console.log(text.value);
+    text.select();
     document.execCommand("Copy");
-    alert("Senha copiada: " + text[0].value);
+    alert("Senha copiada: " + text.value);
 };
+
+function displayMsg(msg, password){
+    const pwContainer = document.querySelector('.password-container');
+    const pwDisplay = document.querySelector('.password');
+    const pwStatus = document.querySelector('.main-container p');
+
+    if(!password){
+        pwContainer.style.display = 'none';
+        pwStatus.innerHTML = msg;
+        pwDisplay.value = '';
+    }else{
+        pwContainer.style.display = 'flex';
+        pwStatus.innerHTML = msg;
+        pwDisplay.value = password;
+    };
+}

@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Pequenos Projetos JS</title>
+
+    <style>
+        a:hover{
+            font-style: italic;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,41 +31,46 @@
             <h1>Alguns projetos para treinar javascript Descrição de como foram desenvolvidos por mim:</h1>
 
             <div class="text-container">
-                <h3>Validador de Formulário:</h3>
-                <p>Um validaor de formulario simples no front-end  (explicar como fez) 
-                    consectetur, adipisicing elit. Necessitatibus facere eveniet quam, 
-                    animi esse hic explicabo ipsam iur</p>
+                <a href="./calculadoraIMC.html"><h3>Calculadora de IMC</h3></a>
+                <p>Calcula o índice de masa corporal(IMC) e exibe em qual categoria se encaixa utilizando um array com os níveis de imc.</p>
             </div>
 
             <div class="text-container">
-                <h3>Validador de Formulário:</h3>
-                <p>Um validaor de formulario simples no front-end  (explicar como fez) 
-                    consectetur, adipisicing elit. Necessitatibus facere eveniet quam, 
-                    animi esse hic explicabo ipsam iur</p>
+                <a href="./calculadoraSimple.html"><h3>Calculadora Simple</h3></a>
+                <p>Calculadora simples com funcionalidades apagar todos os números, apagar somente o último número 
+                    e resolver a operação utilizando “eval” (mesmo não sendo muito recomendado) e com a propriedade 
+                    readonly true, no input, não permitindo digitar qualquer valor no display dos números.</p>
             </div>
-        </section>
-
-        <section>
-            <h1>Alguns projetos para treinar javascript Descrição de como foram desenvolvidos por mim:</h1>
-
+        
             <div class="text-container">
-                <h3>Validador de Formulário:</h3>
-                <p>Um validaor de formulario simples no front-end  (explicar como fez) 
-                    consectetur, adipisicing elit. Necessitatibus facere eveniet quam, 
-                    animi esse hic explicabo ipsam iur</p>
+                <a href="./cronometro.html"><h3>Cronômetro</h3></a>         
+                <p>Cronômetro com funções de iniciar, pausar e zerar utilizando as funções clearInterval
+                    e setInterval para adicionar 1 segundo de cada vez ao co cronômetro.</p>
             </div>
 
             <div class="text-container">
-                <h3>Validador de Formulário:</h3>
-                <p>Um validaor de formulario simples no front-end  (explicar como fez) 
-                    consectetur, adipisicing elit. Necessitatibus facere eveniet quam, 
-                    animi esse hic explicabo ipsam iur</p>
+                <a href="./geradorSenha.html"><h3>Gerador de senha</h3></a>               
+                <p>Gera senha de com opções de quantidade entre 4 a 30 caracteres podendo ser números, 
+                    letras minúsculas, letra maiúsculas e símbolos que serão embaralhados e apresenta no
+                    display junto com um botão com a função de copiar a senha gerada para a área de transferência.
+                    O algoritmo também dispara erros diferentes para cada situação.</p>
+            </div>
+
+            <div class="text-container">
+                <a href="./listaTarefa.html"><h3>Lista de Tarefa</h3></a>              
+                <p>Lista de tarefa que armazena o item no localStorage fazendo com q a lista não se perca mesmo depois de encerrar o navegador.</p>
+            </div>
+
+            <div class="text-container">
+                <a href="./validandoFormulario.html"><h3>Validador de Formulário:</h3></a>
+                <p>Um validador de formulário simples no front-end utilizando um algoritmo para validar o CPF e 
+                    utilizando “class” para verificar cada input conforme suas especificações se tiver algum erro 
+                    ele chama a função alertErr com os parâmetros input onde vai ser a mensagem e a mensagem de erro.</p>
             </div>
         </section>
 
         <footer></footer>
     </main>
-    
     
     <script type="module" src="../assets/js/main.js"></script>
 

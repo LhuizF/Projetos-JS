@@ -1,21 +1,21 @@
 function calcular(){
     const peso = Number(document.getElementById('peso').value);
-    const altura = Number(document.getElementById('altura').value)
+    const altura = Number(document.getElementById('altura').value);
 
-    if(isNaN(peso)|| peso === 0) return notNumber("Peso");
+    if(isNaN(peso) || peso === 0) return notNumber("Peso");
 
-    if(isNaN(altura) || altura == 0) return notNumber("Altura");
+    if(isNaN(altura) || altura === 0) return notNumber("Altura");
 
-    let imc = (peso/(altura ** 2)).toFixed(2)
+    let imc = (peso/(altura ** 2)).toFixed(2);
 
-    resultDisplay(imc, getNivel(imc))
-}
+    resultDisplay(imc, getNivel(imc));
+};
 
 function notNumber(err){
-    const span = document.querySelector('.resultado')
+    const span = document.querySelector('.resultado');
     span.innerHTML = `${err} inválido`;
-    span.style.backgroundColor ="#D7102E"
-}
+    span.style.backgroundColor ="#D7102E";
+};
 
 function getNivel(imc){
     const nivel = [
@@ -33,7 +33,6 @@ function getNivel(imc){
     if(imc >= 25) return nivel[2];
     if(imc >= 18.5) return nivel[1];
     if(imc < 18.5) return nivel[0];
-
 }
 
 function resultDisplay(imc, msg){
